@@ -223,6 +223,8 @@ export function calculatedStatToFilter (
       if (!fixedStats.includes(filter.statRef)) {
         filter.tag = FilterTag.Variant
       }
+    } else if (sources.some(s => s.modifier.info.generation === 'foulborn')) {
+      filter.tag = FilterTag.Foulborn
     } else if (sources.some(s => CLIENT_STRINGS.SHAPER_MODS.includes(s.modifier.info.name!))) {
       filter.tag = FilterTag.Shaper
     } else if (sources.some(s => CLIENT_STRINGS.ELDER_MODS.includes(s.modifier.info.name!))) {
@@ -425,6 +427,8 @@ function finalFilterTweaks (ctx: FiltersCreationContext) {
         // hide only if fractured mod has corresponding explicit variant
         filter.hidden = 'filters.hide_for_crafting'
       }
+    } else if (filter.tag === FilterTag.Foulborn || filter.tag === FilterTag.Variant) {
+      filter.disabled = false
     }
   }
 
