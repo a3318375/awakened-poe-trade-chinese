@@ -72,6 +72,7 @@ export default defineComponent({
   },
   setup (props) {
     const leagues = useLeagues()
+    console.log(2222, props.filters, props.api)
     const { t } = useI18nNs('online_filter')
 
     return {

@@ -95,6 +95,8 @@ export default {
   INCURSION_MODS: ['古铁雷兹的', '肖佩克的', '托钵塔特的', '塔卡提的', '马塔特尔的', '马塔特尔之', '奇塔夸雷特的', '奇塔夸雷特之', '塔卡提之', '古铁雷兹之', '普华特之'],
   FOIL_UNIQUE: '古藏传奇',
   UNMODIFIABLE: '基底词缀不能改变',
+  FOULBORN_NAME: /^穢生 (.*)$/,
+  FOULBORN_MODIFIER: 'Foulborn Unique Modifier',
   // ---
   CHAT_SYSTEM: /^: (?<body>.+)$/,
   CHAT_TRADE: /^\$(?:<(?<guild_tag>.+?)> )?(?<char_name>.+?): (?<body>.+)$/,

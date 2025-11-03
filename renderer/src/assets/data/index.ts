@@ -88,6 +88,7 @@ async function loadItems (language: string) {
       const out: BaseType[] = []
       while (start !== ndjson.length) {
         const end = ndjson.indexOf('\n', start)
+        console.log(111, ndjson.slice(start, end))
         const record = JSON.parse(ndjson.slice(start, end)) as BaseType
         if (record.namespace === ns && record[prop] === name) {
           out.push(record)

@@ -104,6 +104,7 @@
     "blue_sockets": "蓝孔: {0}",
     "green_sockets": "绿孔: {0}",
     "quality": "品质: {0}",
+    "memory_strands": "记忆丝缕: {0}",
     "gem_level": "等级: {0}",
     "sentinel_charge": "充能: {0}",
     "find_in_stash": "Find in Stash",
@@ -215,6 +216,7 @@
   "online_filter": {
     "offline_toggle": "在线&离线",
     "in_league_toggle": "赛季",
+    "merchant_toggle": "即时买断",
     "listed_any_time": "列出:任意时间",
     "listed_1day": "1天内",
     "listed_3days": "3天内",
